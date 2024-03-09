@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* border: 1px solid red; */
+    /* height: 100dvh; */
+    font-family: Arial, sans-serif;
+      
+}
+
+    
+
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+    }
+
+    header nav {
+      display: inline-block;
+    }
+
+    header nav a {
+      color: white;
+      text-decoration: none;
+      margin-right: 20px;
+    }
+
+    main{
+        height: 100vh;
+    }
+    .hero {
+      background-image: url('university-hero.jpg');
+      background-size: cover;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .main-content {
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #f8f9fa;
+      padding: 20px;
+      text-align: center;
+    }
+  
+
+
+
+/* ----------------------------------------------------------------------- */
+
+.chat-box{
+    /* border: 1px solid green; */
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 300px;
+    height: 350px;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    background: linear-gradient(to top, #118A66CC, #96A39FCC);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-box .title{
+    /* border: 2px solid red; */
+    padding: .5rem 1rem;
+    background-color: #48B6F3;
+    border-radius: 1rem;
+    
+}
+.chat-box .chats{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+.chat-box .chats::-webkit-scrollbar {
+    display: none;
+}
+.chat-box .chats .bubble{
+    /* border: 1px solid red; */
+    padding: .5rem 1rem;
+    margin: .5rem 0;
+    border-radius: 1rem;
+    background-color: #48B6F3;
+    /* color: white; */
+    width: fit-content;
+    max-width: 70%;
+    
+}
+.chat-box .chats .bubble:nth-child(odd){
+    align-self: flex-end;
+    background-color: #C5DDE9;
+}
+.chat-box .message{
+    width: 100%;
+    padding: .5rem 0;
+    /* border: 1px solid blue; */
+    
+}
+.chat-box .message form{
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-between;
+}
+.chat-box .message form input{
+    width: 75%;
+    padding: 0 1rem;
+    height: 2rem;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    &:focus{
+        border: 1px solid #000000;
+    }
+}
+.chat-box .message form button {
+    /* border: 1px solid red;  */
+    width: 20%;
+    border-radius: 1rem;
+    /* height: 2rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    &:hover{
+        cursor: pointer;
+        background-color: #48B6F3;
+    }
+
+}
+.chat-box .message form button img{
+    height: 23px;
+    width: 23px;
+    
+}
